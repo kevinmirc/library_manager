@@ -1,0 +1,26 @@
+
+
+<div class="container">
+  <br>
+  <%= link_to "Checkout Item", "", class: "btn waves-effect waves-light red accent-3" %>
+
+  <div class="section">
+    <div class="row">
+      <!-- <h1>Reservations</h1> -->
+      <table>
+        <thead>
+          <tr>
+              <th data-field="id">Checked Out By</th>
+              <th data-field="name">Item</th>
+              <th data-field="price">Due Date</th>
+              <th data-field="return">Return</th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render partial: 'reservations/row', collection: @reservations, as: 'reservation' %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br><br>
+</div>

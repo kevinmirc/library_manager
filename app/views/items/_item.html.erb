@@ -1,0 +1,16 @@
+<div class="col s12 m4">
+  <div class="icon-block">
+    <% if item.class == Book %>
+      <h2 class="center red-icon"><i class="material-icons">library_books</i></h2>
+    <% elsif item.class == Album %>
+      <h2 class="center red-icon"><i class="material-icons">queue_music</i></h2>
+    <% elsif item.class == Movie %>
+      <h2 class="center red-icon"><i class="material-icons">movie</i></h2>
+    <% else %>
+      <h2 class="center red-icon"><i class="material-icons">queue_music</i></h2>
+    <% end %>
+    
+    <h6 class="center"><%= item.title %></h6>
+    <p class="center"><%= "Created by: #{item.created_by}" %></p>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<tr>
+  <td><%= link_to reservation.owner.name, "" %></td>
+  <td><%= link_to reservation.item.title, item_path(reservation.item) %></td>
+  <td><%= reservation.formatted_due_date %></td>
+  <th><button>Return Item</button></th>
+</tr>
